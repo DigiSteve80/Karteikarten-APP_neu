@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+  background: #f8f8f8;
+  padding: 20px;
+}
+
+input {
+  margin: 5px 0;
+  padding: 5px;
+  width: 300px;
+}
+
+button {
+  margin: 5px;
+  padding: 6px 12px;
+}
+
+#feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}
