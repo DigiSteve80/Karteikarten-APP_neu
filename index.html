@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Karteikarten App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Karteikarten App</h1>
+
+  <div id="mode-selector">
+    <button onclick="switchMode('input')">Karten erstellen</button>
+    <button onclick="switchMode('quiz')">Abfragemodus</button>
+  </div>
+
+  <div id="input-mode">
+    <h2>Neue Karte erstellen</h2>
+    <input type="text" id="question" placeholder="Frage eingeben"><br>
+    <input type="text" id="answer" placeholder="Antwort eingeben"><br>
+    <button onclick="addCard()">Karte speichern</button>
+  </div>
+
+  <div id="quiz-mode" style="display:none;">
+    <h2>Abfragemodus</h2>
+    <div id="quiz-question"></div>
+    <input type="text" id="quiz-answer" placeholder="Deine Antwort"><br>
+    <button onclick="checkAnswer()">Antwort absenden</button><br>
+    <div id="feedback"></div>
+    <button id="show-answer-btn" onclick="showCorrectAnswer()" style="display:none;">Antwort anzeigen</button>
+    <button id="dont-know-btn" onclick="showCorrectAnswer()" style="display:none;">Weiß ich nicht</button><br><br>
+    <button onclick="prevCard()">← Zurück</button>
+    <button onclick="nextCard()">Weiter →</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
